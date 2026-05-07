@@ -2,14 +2,14 @@
 # This file is distributed under the GPL v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Magic Login 2.7.1\n"
+"Project-Id-Version: Magic Login 2.8\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/magic-login\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-03-15T13:30:04+00:00\n"
+"POT-Creation-Date: 2026-05-07T20:01:54+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: magic-login\n"
@@ -43,78 +43,78 @@ msgstr ""
 msgid "https://handyplugins.co/"
 msgstr ""
 
-#: includes/admin/dashboard.php:124
+#: includes/admin/dashboard.php:123
 msgid "Tokens has been removed."
 msgstr ""
 
-#: includes/admin/dashboard.php:126
+#: includes/admin/dashboard.php:125
 msgid "Tokens could not be removed."
 msgstr ""
 
-#: includes/admin/dashboard.php:135
+#: includes/admin/dashboard.php:134
 msgid "Settings have been reset."
 msgstr ""
 
-#: includes/admin/dashboard.php:176
+#: includes/admin/dashboard.php:177
 msgid "Settings saved."
 msgstr ""
 
-#: includes/admin/dashboard.php:194
-#: includes/admin/dashboard.php:215
+#: includes/admin/dashboard.php:195
+#: includes/admin/dashboard.php:216
 msgid "You do not have sufficient permissions to access this page."
 msgstr ""
 
-#: includes/admin/dashboard.php:220
+#: includes/admin/dashboard.php:221
 msgid "No file uploaded."
 msgstr ""
 
-#: includes/admin/dashboard.php:226
+#: includes/admin/dashboard.php:227
 msgid "There was an error uploading the file."
 msgstr ""
 
-#: includes/admin/dashboard.php:238
+#: includes/admin/dashboard.php:239
 msgid "File size must be between 1 byte and 1MB."
 msgstr ""
 
-#: includes/admin/dashboard.php:258
+#: includes/admin/dashboard.php:259
 msgid "Invalid file type. Only JSON files are allowed."
 msgstr ""
 
-#: includes/admin/dashboard.php:271
+#: includes/admin/dashboard.php:272
 msgid "Invalid or malformed JSON file."
 msgstr ""
 
-#: includes/admin/dashboard.php:279
+#: includes/admin/dashboard.php:280
 msgid "Settings imported successfully."
 msgstr ""
 
-#: includes/admin/dashboard.php:281
+#: includes/admin/dashboard.php:282
 msgid "Failed to import settings."
 msgstr ""
 
-#: includes/admin/dashboard.php:306
+#: includes/admin/dashboard.php:307
 msgid "Magic Login Security Notice:"
 msgstr ""
 
-#: includes/admin/dashboard.php:309
+#: includes/admin/dashboard.php:310
 msgid "Your encryption key and salt are using default values."
 msgstr ""
 
-#: includes/admin/dashboard.php:311
+#: includes/admin/dashboard.php:312
 msgid "Your encryption key is using a default value."
 msgstr ""
 
-#: includes/admin/dashboard.php:313
+#: includes/admin/dashboard.php:314
 msgid "Your encryption salt is using a default value."
 msgstr ""
 
 #. translators: %s: documentation URL
-#: includes/admin/dashboard.php:319
+#: includes/admin/dashboard.php:320
 #, php-format
 msgid "For better security, please set custom encryption keys and salts in your configuration file. %s"
 msgstr ""
 
-#: includes/admin/dashboard.php:320
+#: includes/admin/dashboard.php:321
 msgid "Learn more."
 msgstr ""
 
@@ -149,7 +149,7 @@ msgid "Settings"
 msgstr ""
 
 #: includes/admin/partials/settings.php:41
-#: includes/admin/partials/settings.php:89
+#: includes/admin/partials/settings.php:88
 msgid "Update settings"
 msgstr ""
 
@@ -163,8 +163,7 @@ msgid "Registration"
 msgstr ""
 
 #: includes/admin/partials/settings.php:55
-#: includes/admin/partials/settings.php:60
-#: includes/admin/partials/settings.php:64
+#: includes/admin/partials/settings.php:63
 #: includes/admin/partials/tabs/login.php:201
 #: includes/admin/partials/tabs/login.php:460
 #: includes/admin/partials/tabs/login.php:535
@@ -181,11 +180,11 @@ msgstr ""
 msgid "Spam Protection"
 msgstr ""
 
-#: includes/admin/partials/settings.php:63
+#: includes/admin/partials/settings.php:62
 msgid "SMS"
 msgstr ""
 
-#: includes/admin/partials/settings.php:67
+#: includes/admin/partials/settings.php:66
 msgid "Tools"
 msgstr ""
 
@@ -540,7 +539,7 @@ msgstr ""
 #: includes/admin/partials/tabs/login.php:958
 #: includes/admin/partials/tabs/registration.php:435
 #: includes/admin/partials/tabs/sms.php:366
-#: includes/admin/partials/tabs/spam-protection.php:436
+#: includes/admin/partials/tabs/spam-protection.php:458
 msgid "Try Magic Login Pro Today"
 msgstr ""
 
@@ -956,6 +955,18 @@ msgstr ""
 msgid "Enable spam protection for login form."
 msgstr ""
 
+#: includes/admin/partials/tabs/spam-protection.php:434
+msgid "Honeypot Protection"
+msgstr ""
+
+#: includes/admin/partials/tabs/spam-protection.php:435
+msgid "Add a hidden field and form timing checks to Magic Login forms without requiring an external CAPTCHA service."
+msgstr ""
+
+#: includes/admin/partials/tabs/spam-protection.php:448
+msgid "Enable honeypot protection for Magic Login forms."
+msgstr ""
+
 #: includes/admin/partials/tabs/tools.php:19
 msgid "Reset"
 msgstr ""
@@ -1034,20 +1045,20 @@ msgid "Login with Email"
 msgstr ""
 
 #: includes/block.php:76
-#: includes/classes/LoginManager.php:897
+#: includes/classes/LoginManager.php:905
 #: assets/js/admin/login-block.js:36
 msgid "Please enter your username or email address. You will receive an email message to log in."
 msgstr ""
 
 #: includes/block.php:80
-#: includes/classes/LoginManager.php:954
+#: includes/classes/LoginManager.php:962
 #: includes/shortcode.php:130
 #: assets/js/admin/login-block.js:43
 msgid "Username or Email Address"
 msgstr ""
 
 #: includes/block.php:84
-#: includes/classes/LoginManager.php:969
+#: includes/classes/LoginManager.php:977
 #: includes/shortcode.php:83
 #: assets/js/admin/login-block.js:47
 msgid "Send me the link"
@@ -1055,7 +1066,7 @@ msgstr ""
 
 #: includes/block.php:191
 #: includes/classes/CodeLogin.php:183
-#: includes/classes/LoginManager.php:947
+#: includes/classes/LoginManager.php:955
 #: includes/shortcode.php:122
 msgid "Sending..."
 msgstr ""
@@ -1069,7 +1080,7 @@ msgid "Login successful! You will be redirected shortly."
 msgstr ""
 
 #: includes/classes/CodeLogin.php:184
-#: includes/classes/LoginManager.php:948
+#: includes/classes/LoginManager.php:956
 msgid "Please verify that you are not a robot."
 msgstr ""
 
@@ -1085,94 +1096,103 @@ msgstr ""
 msgid "Cancel"
 msgstr ""
 
-#: includes/classes/LoginManager.php:136
-#: includes/classes/LoginManager.php:146
+#: includes/classes/Honeypot.php:227
+msgid "Leave this field empty"
+msgstr ""
+
+#: includes/classes/Honeypot.php:327
+#: includes/classes/LoginManager.php:767
+msgid "Invalid login code."
+msgstr ""
+
+#: includes/classes/Honeypot.php:418
+msgid "If an account matches your request, please check your inbox for the login link. If you did not receive a login email, check your spam folder too."
+msgstr ""
+
+#: includes/classes/LoginManager.php:138
+#: includes/classes/LoginManager.php:148
 msgid "Invalid request"
 msgstr ""
 
 #. translators: %s: The magic login link
-#: includes/classes/LoginManager.php:328
+#: includes/classes/LoginManager.php:336
 #, php-format
 msgid "<a href=\"%s\" target=\"_blank\" rel=\"noopener\">Click here to login</a>."
 msgstr ""
 
 #. translators: %s: The magic login link
-#: includes/classes/LoginManager.php:332
+#: includes/classes/LoginManager.php:340
 #, php-format
 msgid "Auto Login: %s"
 msgstr ""
 
 #. translators: 1: TTL value (number) 2: Unit (minute(s), hour(s), days(s))
-#: includes/classes/LoginManager.php:338
+#: includes/classes/LoginManager.php:346
 #, php-format
 msgid "Login link will expire in %1$s %2$s."
 msgstr ""
 
-#: includes/classes/LoginManager.php:552
+#: includes/classes/LoginManager.php:560
 msgid "or"
 msgstr ""
 
-#: includes/classes/LoginManager.php:637
+#: includes/classes/LoginManager.php:645
 msgid "Log In"
 msgstr ""
 
-#: includes/classes/LoginManager.php:642
+#: includes/classes/LoginManager.php:650
 msgid "Send me the login link"
 msgstr ""
 
-#: includes/classes/LoginManager.php:737
+#: includes/classes/LoginManager.php:745
 #, php-format
 msgid "Invalid magic login token, but you are logged in as '%1$s'. <a href=\"%2$s\">Go to the dashboard instead</a>?"
 msgstr ""
 
-#: includes/classes/LoginManager.php:744
+#: includes/classes/LoginManager.php:752
 #, php-format
 msgid "Invalid magic login token. <a href=\"%s\">Try signing in instead</a>?"
 msgstr ""
 
-#: includes/classes/LoginManager.php:751
+#: includes/classes/LoginManager.php:759
 #, php-format
 msgid "Invalid magic login token. Please try to create <a href=\"%s\">a new login link</a>?"
 msgstr ""
 
-#: includes/classes/LoginManager.php:759
-msgid "Invalid login code."
-msgstr ""
-
-#: includes/classes/LoginManager.php:853
+#: includes/classes/LoginManager.php:861
 msgid "Log in"
 msgstr ""
 
-#: includes/classes/LoginManager.php:896
+#: includes/classes/LoginManager.php:904
 msgid "Please enter your username. You will receive an email message to log in."
 msgstr ""
 
-#: includes/classes/LoginManager.php:952
+#: includes/classes/LoginManager.php:960
 #: includes/shortcode.php:128
 msgid "Username"
 msgstr ""
 
-#: includes/classes/LoginManager.php:1061
+#: includes/classes/LoginManager.php:1069
 msgid "There is no account with that username."
 msgstr ""
 
-#: includes/classes/LoginManager.php:1063
+#: includes/classes/LoginManager.php:1071
 msgid "There is no account with that username or email address."
 msgstr ""
 
-#: includes/classes/LoginManager.php:1067
+#: includes/classes/LoginManager.php:1075
 msgid "Unable to process your request. Please try again."
 msgstr ""
 
-#: includes/classes/LoginManager.php:1106
+#: includes/classes/LoginManager.php:1114
 msgid "Please check your inbox for the login link. If you did not receive a login email, check your spam folder too."
 msgstr ""
 
-#: includes/classes/LoginManager.php:1109
+#: includes/classes/LoginManager.php:1117
 msgid "Please check your phone for the login link."
 msgstr ""
 
-#: includes/classes/LoginManager.php:1117
+#: includes/classes/LoginManager.php:1125
 msgid "Please enter the code sent to your email."
 msgstr ""
 
@@ -1188,16 +1208,16 @@ msgstr ""
 msgid "Welcome to {{SITENAME}}"
 msgstr ""
 
-#: includes/utils.php:293
+#: includes/utils.php:294
 msgid "Here is your login code: {{MAGIC_LOGIN_CODE}}. It will expire in {{EXPIRES_WITH_INTERVAL}}."
 msgstr ""
 
-#: includes/utils.php:295
+#: includes/utils.php:296
 msgid "Welcome {{FULL_NAME}}! Your account on {{SITENAME}} has been created. You can login here: {{MAGIC_LINK}}."
 msgstr ""
 
 #. translators: Do not translate USERNAME, SITENAME,EXPIRES, MAGIC_LINK, SITENAME, SITEUR, EXPIRES_WITH_INTERVAL: those are placeholders.
-#: includes/utils.php:318
+#: includes/utils.php:319
 msgid ""
 "Hi {{USERNAME}},\n"
 "\n"
@@ -1215,19 +1235,19 @@ msgid ""
 "{{SITEURL}}"
 msgstr ""
 
-#: includes/utils.php:482
+#: includes/utils.php:483
 msgid "Minute(s)"
 msgstr ""
 
-#: includes/utils.php:483
+#: includes/utils.php:484
 msgid "Hour(s)"
 msgstr ""
 
-#: includes/utils.php:484
+#: includes/utils.php:485
 msgid "Day(s)"
 msgstr ""
 
-#: includes/utils.php:710
+#: includes/utils.php:711
 msgid ""
 "Hi there,\n"
 "<br><br>\n"
