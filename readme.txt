@@ -4,7 +4,7 @@ Tags:              login, passwordless, passwordless-login, magic-login, magic-l
 Requires at least: 5.0
 Tested up to:      7.0
 Requires PHP:      7.4
-Stable tag:        2.7.1
+Stable tag:        2.8
 License:           GPLv2 or later
 License URI:       http://www.gnu.org/licenses/gpl-2.0.html
 Donate link:       https://handyplugins.co/donate/
@@ -24,6 +24,7 @@ Streamline the login process by sending links to your users. No more passwords t
 - **Passwordless Authentication**: No more forgotten passwords or complex requirements.
 - **Magic Links**: Secure, unique links sent directly to users' email inboxes.
 - **Auto Login**: Support for auto-login links in outgoing emails. It's useful when pending action from a user, such as reply a comment, complete the checkout, etc.
+- **Native Honeypot Protection**: Add a lightweight, no-CAPTCHA spam protection layer to Magic Login forms.[Learn more](https://handyplugins.co/docs/honeypot-protection/)
 - **User-Friendly**: Simplifies the login process for all users.
 - **Enhanced Security**: Reduces risks associated with weak passwords.
 - **Tools**:  Export, import, and reset plugin settings easily from the admin panel or WP-CLI. [Learn more](https://handyplugins.co/docs/magic-login-tools/)
@@ -114,6 +115,10 @@ You can use `[magic_login_form]` shortcode or block. [Learn More.](https://handy
 This behavior occurs because the magic login form is designed to use the current page as the target redirection URL by default. It's a way to ensure a smooth user experience by bringing users back to the page they started from.
 However, if you wish to alter this behavior, you can easily do so by passing an empty redirect_to="" parameter within the shortcode.  [Learn More.](https://handyplugins.co/docs/magic-login-shortcode/)
 
+= Can developers adjust honeypot timing? =
+
+Yes. Developers can use the `magic_login_honeypot_config` filter to adjust the minimum and maximum form age checks used by the native honeypot layer.
+
 
 == Screenshots ==
 
@@ -123,6 +128,10 @@ However, if you wish to alter this behavior, you can easily do so by passing an 
 4. Login Block
 
 == Changelog ==
+
+= 2.8 (May 07, 2026) =
+* [Added] Native honeypot protection for Magic Login forms.
+* [Updated] Dependencies.
 
 = 2.7.1 (Mar 15, 2026) =
 * [Fixed] Settings import failing on some sites due to restricted MIME type filters when uploading JSON files.
