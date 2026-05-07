@@ -46,7 +46,7 @@ function setup() {
  * @see https://wpmudev.github.io/shared-ui/installation/
  */
 function add_sui_admin_body_class( $classes ) {
-	$classes .= ' sui-2-12-24 ';
+	$classes .= ' sui-2-12-27 ';
 
 	return $classes;
 }
