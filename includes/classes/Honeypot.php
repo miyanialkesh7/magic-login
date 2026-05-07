@@ -429,6 +429,16 @@ class Honeypot {
 			'max_render_age' => HOUR_IN_SECONDS,
 		];
 
+		/**
+		 * Filter the honeypot configuration.
+		 *
+		 * @hook  magic_login_honeypot_config
+		 *
+		 * @param array $config Existing config.
+		 *
+		 * @return array
+		 * @since 2.8
+		 */
 		return (array) apply_filters( 'magic_login_honeypot_config', $config );
 	}
 }
