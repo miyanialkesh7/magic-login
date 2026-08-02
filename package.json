@@ -19,8 +19,8 @@
     "test": "10up-toolkit test-unit-jest",
     "make-pot": "wp i18n make-pot . languages/magic-login.pot --domain='magic-login'",
     "make-json": "wp i18n make-json languages --no-purge",
-    "build-release": "npm install --include=dev && composer install --no-dev -o && npm run build && npm run make-pot",
-    "lint-release": "npm install && composer install && npm run lint"
+    "build-release": "npm ci --include=dev && composer install --no-dev -o && npm run build && npm run make-pot",
+    "lint-release": "npm ci && composer install && npm run lint"
   },
   "devDependencies": {
     "@wordpress/element": "^6.9.0",
@@ -30,7 +30,7 @@
     "@wordpress/scripts": "^32.1"
   },
   "engines": {
-    "node": ">=18.0.0"
+    "node": ">=20.19.0"
   },
   "dependencies": {
     "normalize.css": "^8.0.1"
