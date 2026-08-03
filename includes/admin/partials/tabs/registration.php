@@ -431,7 +431,7 @@ $settings = \MagicLogin\Utils\get_settings();
 	<!-- Upsell ads -->
 	<div class="sui-box-settings-row sui-upsell-row">
 		<div class="sui-upsell-notice" style="padding-left: 0;">
-			<p><?php esc_html_e( 'With our pro version of magic login, you will unlock the registration features of the plugin and get access to the WP-CLI command along with our premium support.' ); ?><br>
+			<p><?php esc_html_e( 'With our pro version of magic login, you will unlock the registration features of the plugin and get access to the WP-CLI command along with our premium support.', 'magic-login' ); ?><br>
 				<a href="https://handyplugins.co/magic-login-pro/?utm_source=wp_admin&utm_medium=plugin&utm_campaign=settings_page_registration" rel="noopener noreferrer nofollow" target="_blank" class="sui-button sui-button-purple" style="margin-top: 10px;color:#fff;"><?php esc_html_e( 'Try Magic Login Pro Today', 'magic-login' ); ?></a>
 			</p>
 		</div>

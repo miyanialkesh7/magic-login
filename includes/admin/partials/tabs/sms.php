@@ -362,7 +362,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<!-- Upsell ads -->
 	<div class="sui-box-settings-row sui-upsell-row">
 		<div class="sui-upsell-notice" style="padding-left: 0;">
-			<p><?php esc_html_e( 'Upgrade to the Pro version to enable SMS authentication and gain access to all premium features—plus dedicated support to keep your login experience smooth and secure.' ); ?><br>
+			<p><?php esc_html_e( 'Upgrade to the Pro version to enable SMS authentication and gain access to all premium features—plus dedicated support to keep your login experience smooth and secure.', 'magic-login' ); ?><br>
 				<a href="https://handyplugins.co/magic-login-pro/?utm_source=wp_admin&utm_medium=plugin&utm_campaign=settings_page_sms" rel="noopener noreferrer nofollow" target="_blank" class="sui-button sui-button-purple" style="margin-top: 10px;color:#fff;"><?php esc_html_e( 'Try Magic Login Pro Today', 'magic-login' ); ?></a>
 			</p>
 		</div>

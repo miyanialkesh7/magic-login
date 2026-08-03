@@ -67,7 +67,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 								echo wp_kses_post(
 									sprintf(
 									/* translators: 1: Magic Login shortcode 2: Documentation URL 3: 'Learn More' text */
-										__( 'In order to add a login form to any page, you can use shortcode <code>%1$s</code> or block. <a href="%2$s" target="_blank" rel="noopener">%3$s</a>' ),
+										__( 'In order to add a login form to any page, you can use shortcode <code>%1$s</code> or block. <a href="%2$s" target="_blank" rel="noopener">%3$s</a>', 'magic-login' ),
 										'[magic_login_form]',
 										get_doc_url( 'docs/add-magic-login-form-to-a-page/' ),
 										__( 'Learn More.', 'magic-login' )
@@ -549,14 +549,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 						<?php checked( 1, $settings['enable_login_throttling'] ); ?>
 					>
 					<span class="sui-toggle-slider" aria-hidden="true"></span>
-					<span id="magic-login-throttle-label" class="sui-toggle-label"><?php esc_html_e( 'Enable throttling' ); ?></span>
+					<span id="magic-login-throttle-label" class="sui-toggle-label"><?php esc_html_e( 'Enable throttling', 'magic-login' ); ?></span>
 					<span class="sui-description">
 					</span>
 				</label>
 
 				<div style=" <?php echo( ! $settings['enable_login_throttling'] ? 'display:none' : '' ); ?>" tabindex="0" id="magic-login-throttle-controls" class="sui-toggle-content sui-border-frame">
 					<div class="sui-form-field">
-						<?php esc_html_e( 'Allow to create maximum' ); ?>
+						<?php esc_html_e( 'Allow to create maximum', 'magic-login' ); ?>
 						<input
 							id="login_throttling_limit"
 							name="login_throttling_limit"
@@ -566,7 +566,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 							class="sui-form-control sui-field-has-suffix"
 							value="<?php echo absint( $settings['login_throttling_limit'] ); ?>"
 						>
-						<?php esc_html_e( 'login links from the same IP within' ); ?>
+						<?php esc_html_e( 'login links from the same IP within', 'magic-login' ); ?>
 						<input
 							id="login_throttling_time"
 							name="login_throttling_time"
@@ -576,7 +576,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 							class="sui-form-control sui-field-has-suffix"
 							value="<?php echo absint( $settings['login_throttling_time'] ); ?>"
 						>
-						<?php esc_html_e( 'minutes.' ); ?>
+						<?php esc_html_e( 'minutes.', 'magic-login' ); ?>
 					</div>
 				</div>
 			</div>
@@ -954,7 +954,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<!-- Upsell ads -->
 	<div class="sui-box-settings-row sui-upsell-row">
 		<div class="sui-upsell-notice" style="padding-left: 0;">
-			<p><?php esc_html_e( 'With our pro version of magic login, you will unlock the advanced configurations of the plugin and get access to the WP-CLI command along with our premium support.' ); ?><br>
+			<p><?php esc_html_e( 'With our pro version of magic login, you will unlock the advanced configurations of the plugin and get access to the WP-CLI command along with our premium support.', 'magic-login' ); ?><br>
 				<a href="https://handyplugins.co/magic-login-pro/?utm_source=wp_admin&utm_medium=plugin&utm_campaign=settings_page" rel="noopener noreferrer nofollow" target="_blank" class="sui-button sui-button-purple" style="margin-top: 10px;color:#fff;"><?php esc_html_e( 'Try Magic Login Pro Today', 'magic-login' ); ?></a>
 			</p>
 		</div>
