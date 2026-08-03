@@ -2,14 +2,14 @@
 # This file is distributed under the GPL v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Magic Login 2.8\n"
+"Project-Id-Version: Magic Login 2.8.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/magic-login\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-05-07T20:01:54+00:00\n"
+"POT-Creation-Date: 2026-08-03T17:44:28+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: magic-login\n"
@@ -206,6 +206,12 @@ msgstr ""
 msgid "Magic login form is accessible <a href=\"%1$s\">%1$s</a>"
 msgstr ""
 
+#. translators: 1: Magic Login shortcode 2: Documentation URL 3: 'Learn More' text
+#: includes/admin/partials/tabs/login.php:70
+#, php-format
+msgid "In order to add a login form to any page, you can use shortcode <code>%1$s</code> or block. <a href=\"%2$s\" target=\"_blank\" rel=\"noopener\">%3$s</a>"
+msgstr ""
+
 #: includes/admin/partials/tabs/login.php:73
 #: includes/admin/partials/tabs/login.php:117
 #: includes/admin/partials/tabs/login.php:149
@@ -392,6 +398,22 @@ msgstr ""
 msgid "Limit login URL generation for the given time span."
 msgstr ""
 
+#: includes/admin/partials/tabs/login.php:552
+msgid "Enable throttling"
+msgstr ""
+
+#: includes/admin/partials/tabs/login.php:559
+msgid "Allow to create maximum"
+msgstr ""
+
+#: includes/admin/partials/tabs/login.php:569
+msgid "login links from the same IP within"
+msgstr ""
+
+#: includes/admin/partials/tabs/login.php:579
+msgid "minutes."
+msgstr ""
+
 #: includes/admin/partials/tabs/login.php:591
 msgid "IP Check"
 msgstr ""
@@ -536,6 +558,10 @@ msgstr ""
 msgid "Maximum number of API requests allowed per minute from a single IP address."
 msgstr ""
 
+#: includes/admin/partials/tabs/login.php:957
+msgid "With our pro version of magic login, you will unlock the advanced configurations of the plugin and get access to the WP-CLI command along with our premium support."
+msgstr ""
+
 #: includes/admin/partials/tabs/login.php:958
 #: includes/admin/partials/tabs/registration.php:435
 #: includes/admin/partials/tabs/sms.php:366
@@ -654,6 +680,10 @@ msgstr ""
 
 #: includes/admin/partials/tabs/registration.php:422
 msgid "Enter the URL to which users will be redirected after completing registration."
+msgstr ""
+
+#: includes/admin/partials/tabs/registration.php:434
+msgid "With our pro version of magic login, you will unlock the registration features of the plugin and get access to the WP-CLI command along with our premium support."
 msgstr ""
 
 #: includes/admin/partials/tabs/sms.php:26
@@ -797,6 +827,10 @@ msgstr ""
 
 #: includes/admin/partials/tabs/sms.php:355
 msgid "Customize the SMS message sent to new users after registration."
+msgstr ""
+
+#: includes/admin/partials/tabs/sms.php:365
+msgid "Upgrade to the Pro version to enable SMS authentication and gain access to all premium features—plus dedicated support to keep your login experience smooth and secure."
 msgstr ""
 
 #: includes/admin/partials/tabs/spam-protection.php:24
@@ -965,6 +999,10 @@ msgstr ""
 
 #: includes/admin/partials/tabs/spam-protection.php:448
 msgid "Enable honeypot protection for Magic Login forms."
+msgstr ""
+
+#: includes/admin/partials/tabs/spam-protection.php:457
+msgid "With Magic Login Pro, you can add CAPTCHA services for login and registration flows, plus get access to the WP-CLI command along with premium support."
 msgstr ""
 
 #: includes/admin/partials/tabs/tools.php:19
