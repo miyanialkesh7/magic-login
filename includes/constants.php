@@ -7,6 +7,10 @@
 
 namespace MagicLogin\Constants;
 
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly.
+}
+
 const TOKEN_USER_META            = 'magic_login_token';
 const SETTING_OPTION             = 'magic_login_settings';
 const CRON_HOOK_NAME             = 'magic_login_cleanup_expired_tokens';
