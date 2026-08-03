@@ -2,9 +2,9 @@
 Contributors:      handyplugins, m_uysl
 Tags:              login, passwordless, passwordless-login, magic-login, magic-link
 Requires at least: 5.0
-Tested up to:      7.0
+Tested up to:      7.1
 Requires PHP:      7.4
-Stable tag:        2.8
+Stable tag:        2.8.1
 License:           GPLv2 or later
 License URI:       http://www.gnu.org/licenses/gpl-2.0.html
 Donate link:       https://handyplugins.co/donate/
@@ -128,6 +128,11 @@ Yes. Developers can use the `magic_login_honeypot_config` filter to adjust the m
 4. Login Block
 
 == Changelog ==
+
+= 2.8.1 (Aug 03, 2026) =
+* [Fixed] Missing text domains in several admin interface strings.
+* [Updated] Dependencies.
+* Tested with WP 7.1
 
 = 2.8 (May 07, 2026) =
 * [Added] Native honeypot protection for Magic Login forms.
