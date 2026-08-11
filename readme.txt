@@ -1,4 +1,4 @@
-=== Magic Login - Passwordless Authentication for WordPress - Login Without Password ===
+=== Magic Login - Magic Link & Passwordless Authentication for WordPress - Login Without Password ===
 Contributors:      handyplugins, m_uysl
 Tags:              login, passwordless, passwordless-login, magic-login, magic-link
 Requires at least: 5.0
