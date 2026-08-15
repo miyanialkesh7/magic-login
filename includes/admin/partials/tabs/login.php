@@ -495,8 +495,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 								'max' => 600,
 							),
 						);
+						$brute_force_inputs = array();
 						foreach ( $brute_force_fields as $field => $args ) {
-							${$field . '_input'} = sprintf(
+							$brute_force_inputs[ $field ] = sprintf(
 								'<input
 															id="%1$s"
 															name="%1$s"
@@ -515,9 +516,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 						/* translators: 1: Ban duration input 2: Trial count input 3: Interval input */
 						printf(
 							__( 'Block the IP address for %1$s minutes when it fails to login %2$s times in %3$s minutes.', 'magic-login' ), // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-							$brute_force_bantime_input, // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-							$brute_force_login_attempt_input, // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-							$brute_force_login_time_input // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+							$brute_force_inputs['brute_force_bantime'], // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+							$brute_force_inputs['brute_force_login_attempt'], // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+							$brute_force_inputs['brute_force_login_time'] // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 						); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 						?>
 					</div>
